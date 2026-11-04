@@ -34,7 +34,6 @@
                     boxShadow: {
                         'neon-cyan': '0 0 25px -5px rgba(0, 243, 255, 0.4)',
                         'neon-purple': '0 0 25px -5px rgba(138, 43, 226, 0.4)',
-                        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.4)'
                     }
                 }
             }
@@ -52,7 +51,7 @@
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
         }
         .glass-panel {
-            background: rgba(13, 17, 39, 0.75);
+            background: rgba(13, 17, 39, 0.85);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -85,7 +84,7 @@
                 <a href="#faq" class="hover:text-cyber-cyan transition">FAQ</a>
             </nav>
 
-            <button onclick="openOrderModal('2k')" class="px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-cyber-cyan to-cyber-purple text-slate-950 hover:opacity-90 shadow-neon-cyan transition flex items-center space-x-2">
+            <button type="button" onclick="openOrderModal('2k')" class="px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-cyber-cyan to-cyber-purple text-slate-950 hover:opacity-90 shadow-neon-cyan transition flex items-center space-x-2 cursor-pointer">
                 <i data-lucide="send" class="w-4 h-4"></i>
                 <span>Kirim Pesanan</span>
             </button>
@@ -108,7 +107,7 @@
         </p>
 
         <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button onclick="openOrderModal('2k')" class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-sm font-bold bg-gradient-to-r from-cyber-cyan via-cyber-purple to-cyber-pink text-slate-950 shadow-neon-cyan hover:scale-105 transition">
+            <button type="button" onclick="openOrderModal('2k')" class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-sm font-bold bg-gradient-to-r from-cyber-cyan via-cyber-purple to-cyber-pink text-slate-950 shadow-neon-cyan hover:scale-105 transition cursor-pointer">
                 Pesan Sekarang (Fast Response)
             </button>
             <a href="#tarif" class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-sm font-semibold glass-panel text-slate-200 hover:bg-slate-800/80 transition flex items-center justify-center">
@@ -158,7 +157,7 @@
                         <div class="text-2xl font-tech font-bold text-cyber-cyan">Rp 2.000 <span class="text-xs text-slate-400 font-normal">/ pesanan</span></div>
                     </div>
                 </div>
-                <button onclick="openOrderModal('2k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-cyan text-slate-950 font-extrabold text-xs hover:opacity-90 transition flex items-center justify-center space-x-1">
+                <button type="button" onclick="openOrderModal('2k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-cyan text-slate-950 font-extrabold text-xs hover:opacity-90 transition flex items-center justify-center space-x-1 cursor-pointer">
                     <span>Pilih Layanan Ini (2k)</span>
                 </button>
             </div>
@@ -177,7 +176,7 @@
                         <div class="text-2xl font-tech font-bold text-cyber-purple">Rp 3.000 <span class="text-xs text-slate-400 font-normal">+ biaya cetak</span></div>
                     </div>
                 </div>
-                <button onclick="openOrderModal('3k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-purple text-white font-extrabold text-xs hover:opacity-90 transition flex items-center justify-center space-x-1">
+                <button type="button" onclick="openOrderModal('3k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-purple text-white font-extrabold text-xs hover:opacity-90 transition flex items-center justify-center space-x-1 cursor-pointer">
                     <span>Pilih Layanan Ini (3k)</span>
                 </button>
             </div>
@@ -195,7 +194,7 @@
                         <div class="text-2xl font-tech font-bold text-cyber-pink">Rp 4.000 <span class="text-xs text-slate-400 font-normal">/ request</span></div>
                     </div>
                 </div>
-                <button onclick="openOrderModal('4k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-pink text-slate-950 font-extrabold text-xs hover:opacity-90 transition flex items-center justify-center space-x-1">
+                <button type="button" onclick="openOrderModal('4k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-pink text-slate-950 font-extrabold text-xs hover:opacity-90 transition flex items-center justify-center space-x-1 cursor-pointer">
                     <span>Pilih Layanan Ini (4k)</span>
                 </button>
             </div>
@@ -232,11 +231,11 @@
         </div>
     </section>
 
-    <!-- MODAL FORM PEMESANAN -->
-    <div id="order-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
-        <div class="glass-panel border border-slate-700 bg-slate-900/95 max-w-md w-full rounded-2xl p-5 md:p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+    <!-- MODAL FORM PEMESANAN (EXPLICIT INLINE DISPLAY NONE) -->
+    <div id="order-modal" style="display: none;" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+        <div class="glass-panel border border-slate-700 bg-slate-900 max-w-md w-full rounded-2xl p-5 md:p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
             
-            <button onclick="closeOrderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-1">
+            <button type="button" onclick="closeOrderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2">
                 <i data-lucide="x" class="w-5 h-5"></i>
             </button>
 
@@ -275,11 +274,11 @@
                 <div>
                     <label class="text-xs font-semibold text-slate-300 block mb-1">Metode Pembayaran</label>
                     <div class="grid grid-cols-2 gap-2">
-                        <button type="button" id="btn-qris" onclick="selectPayment('qris')" class="p-2.5 rounded-xl border text-xs font-semibold flex items-center justify-center space-x-1 bg-cyber-cyan/20 border-cyber-cyan text-cyber-cyan">
+                        <button type="button" id="btn-qris" onclick="selectPayment('qris')" class="p-2.5 rounded-xl border text-xs font-semibold flex items-center justify-center space-x-1 bg-cyber-cyan/20 border-cyber-cyan text-cyber-cyan cursor-pointer">
                             <i data-lucide="qr-code" class="w-4 h-4"></i>
                             <span>QRIS / E-Wallet</span>
                         </button>
-                        <button type="button" id="btn-tunai" onclick="selectPayment('tunai')" class="p-2.5 rounded-xl border text-xs font-semibold flex items-center justify-center space-x-1 bg-slate-950 border-slate-800 text-slate-400">
+                        <button type="button" id="btn-tunai" onclick="selectPayment('tunai')" class="p-2.5 rounded-xl border text-xs font-semibold flex items-center justify-center space-x-1 bg-slate-950 border-slate-800 text-slate-400 cursor-pointer">
                             <i data-lucide="banknote" class="w-4 h-4"></i>
                             <span>Tunai Saat COD</span>
                         </button>
@@ -296,7 +295,7 @@
                 </div>
 
                 <!-- Submit Button -->
-                <button onclick="submitWhatsAppOrder()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyber-cyan via-cyber-purple to-cyber-pink text-slate-950 font-extrabold text-xs shadow-neon-cyan hover:opacity-95 transition flex items-center justify-center space-x-2">
+                <button type="button" onclick="submitWhatsAppOrder()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyber-cyan via-cyber-purple to-cyber-pink text-slate-950 font-extrabold text-xs shadow-neon-cyan hover:opacity-95 transition flex items-center justify-center space-x-2 cursor-pointer">
                     <i data-lucide="message-square" class="w-4 h-4"></i>
                     <span>Kirim Langsung Ke WhatsApp</span>
                 </button>
@@ -305,5 +304,4 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="border-t border-slate-800/80 glass-panel py-8 px-6 mt-16 text-center text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-betw
+    <fo
