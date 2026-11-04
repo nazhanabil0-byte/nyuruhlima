@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NyuruhLima | Layanan Jasa Titip & Kurir Sekolah Cyberpunk</title>
+    <title>NyuruhLima | Layanan Jasa Titip & Kurir Sekolah</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,9 +40,6 @@
         }
     </script>
 
-    <!-- Lucide Icons CDN -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
     <style>
         .cyber-grid {
             background-size: 40px 40px;
@@ -68,25 +65,17 @@
     <header class="sticky top-0 z-30 glass-panel border-b border-slate-800/80 px-4 md:px-6 py-4">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center space-x-3 cursor-pointer">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyber-cyan via-cyber-purple to-cyber-pink p-[1px] shadow-neon-cyan">
-                    <div class="w-full h-full bg-cyber-bg rounded-[11px] flex items-center justify-center">
-                        <i data-lucide="zap" class="w-5 h-5 text-cyber-cyan"></i>
-                    </div>
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyber-cyan via-cyber-purple to-cyber-pink p-[1px] shadow-neon-cyan flex items-center justify-center">
+                    <div class="w-full h-full bg-cyber-bg rounded-[11px] flex items-center justify-center text-cyber-cyan font-bold text-lg">⚡</div>
                 </div>
                 <div>
                     <span class="font-tech font-bold text-lg md:text-xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-cyber-cyan">NYURUH LIMA</span>
-                    <span class="hidden sm:inline-block text-[10px] uppercase font-semibold px-2 py-0.5 ml-2 rounded-full bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan">Express Courier</span>
+                    <span class="hidden sm:inline-block text-[10px] uppercase font-semibold px-2 py-0.5 ml-2 rounded-full bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan">Express</span>
                 </div>
             </div>
 
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="#tarif" class="hover:text-cyber-cyan transition">Layanan & Tarif</a>
-                <a href="#faq" class="hover:text-cyber-cyan transition">FAQ</a>
-            </nav>
-
-            <button type="button" onclick="openOrderModal('2k')" class="px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-cyber-cyan to-cyber-purple text-slate-950 hover:opacity-90 shadow-neon-cyan transition flex items-center space-x-2 cursor-pointer">
-                <i data-lucide="send" class="w-4 h-4"></i>
-                <span>Kirim Pesanan</span>
+            <button type="button" onclick="openOrderModal('2k')" class="px-4 py-2 rounded-xl text-xs font-bold bg-gradient-to-r from-cyber-cyan to-cyber-purple text-slate-950 hover:opacity-90 shadow-neon-cyan transition cursor-pointer">
+                Kirim Pesanan
             </button>
         </div>
     </header>
@@ -94,8 +83,7 @@
     <!-- HERO SECTION -->
     <section class="relative pt-12 md:pt-20 pb-16 px-4 md:px-6 max-w-7xl mx-auto text-center">
         <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-900/80 border border-cyber-cyan/30 text-cyber-cyan text-xs mb-6">
-            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-            <span>Solusi Titip & Kurir Antar Kelas Tercepat</span>
+            <span>✨ Solusi Titip & Kurir Antar Kelas Tercepat</span>
         </div>
         
         <h1 class="text-3xl md:text-6xl font-tech font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto">
@@ -110,9 +98,6 @@
             <button type="button" onclick="openOrderModal('2k')" class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-sm font-bold bg-gradient-to-r from-cyber-cyan via-cyber-purple to-cyber-pink text-slate-950 shadow-neon-cyan hover:scale-105 transition cursor-pointer">
                 Pesan Sekarang (Fast Response)
             </button>
-            <a href="#tarif" class="w-full sm:w-auto px-8 py-3.5 rounded-xl text-sm font-semibold glass-panel text-slate-200 hover:bg-slate-800/80 transition flex items-center justify-center">
-                Lihat Daftar Tarif
-            </a>
         </div>
 
         <!-- STATS BAR -->
@@ -145,11 +130,8 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Tier 1 (2k) -->
-            <div class="glass-panel p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between hover:border-cyber-cyan/50 transition">
+            <div class="glass-panel p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-cyber-cyan/10 border border-cyber-cyan/30 text-cyber-cyan flex items-center justify-center mb-4">
-                        <i data-lucide="shopping-bag" class="w-6 h-6"></i>
-                    </div>
                     <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300">Tier 1</span>
                     <h3 class="font-tech text-xl font-bold text-white mt-2">Jasa Titip Kantin</h3>
                     <p class="text-xs text-slate-400 mt-2">Titip beli makanan, minuman, atau snack di kantin sekolah tanpa antre panjang.</p>
@@ -157,8 +139,8 @@
                         <div class="text-2xl font-tech font-bold text-cyber-cyan">Rp 2.000 <span class="text-xs text-slate-400 font-normal">/ pesanan</span></div>
                     </div>
                 </div>
-                <button type="button" onclick="openOrderModal('2k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-cyan text-slate-950 font-extrabold text-xs hover:opacity-90 transition flex items-center justify-center space-x-1 cursor-pointer">
-                    <span>Pilih Layanan Ini (2k)</span>
+                <button type="button" onclick="openOrderModal('2k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-cyan text-slate-950 font-extrabold text-xs hover:opacity-90 transition cursor-pointer">
+                    Pilih Layanan Ini (2k)
                 </button>
             </div>
 
@@ -166,9 +148,6 @@
             <div class="glass-panel p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between border-cyber-purple/50 shadow-neon-purple">
                 <div class="absolute top-0 right-0 bg-cyber-purple text-slate-950 font-bold text-[10px] px-3 py-1 rounded-bl-xl uppercase tracking-wider">Terfavorit</div>
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-cyber-purple/10 border border-cyber-purple/30 text-cyber-purple flex items-center justify-center mb-4">
-                        <i data-lucide="file-text" class="w-6 h-6"></i>
-                    </div>
                     <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-cyber-purple/20 text-cyber-purple">Tier 2</span>
                     <h3 class="font-tech text-xl font-bold text-white mt-2">Print & Tugas Sekolah</h3>
                     <p class="text-xs text-slate-400 mt-2">Cetak tugas PDF/Word, fotokopi, atau pengantaran dokumen antar kelas/ruang guru.</p>
@@ -176,17 +155,14 @@
                         <div class="text-2xl font-tech font-bold text-cyber-purple">Rp 3.000 <span class="text-xs text-slate-400 font-normal">+ biaya cetak</span></div>
                     </div>
                 </div>
-                <button type="button" onclick="openOrderModal('3k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-purple text-white font-extrabold text-xs hover:opacity-90 transition flex items-center justify-center space-x-1 cursor-pointer">
-                    <span>Pilih Layanan Ini (3k)</span>
+                <button type="button" onclick="openOrderModal('3k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-purple text-white font-extrabold text-xs hover:opacity-90 transition cursor-pointer">
+                    Pilih Layanan Ini (3k)
                 </button>
             </div>
 
             <!-- Tier 3 (4k) -->
-            <div class="glass-panel p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between hover:border-cyber-pink/50 transition">
+            <div class="glass-panel p-6 rounded-2xl relative overflow-hidden flex flex-col justify-between">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-cyber-pink/10 border border-cyber-pink/30 text-cyber-pink flex items-center justify-center mb-4">
-                        <i data-lucide="package" class="w-6 h-6"></i>
-                    </div>
                     <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300">Tier 3</span>
                     <h3 class="font-tech text-xl font-bold text-white mt-2">Kurir Custom / Koperasi</h3>
                     <p class="text-xs text-slate-400 mt-2">Titip beli alat tulis di koperasi, pengantaran barang besar, atau permintaan khusus.</p>
@@ -194,55 +170,20 @@
                         <div class="text-2xl font-tech font-bold text-cyber-pink">Rp 4.000 <span class="text-xs text-slate-400 font-normal">/ request</span></div>
                     </div>
                 </div>
-                <button type="button" onclick="openOrderModal('4k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-pink text-slate-950 font-extrabold text-xs hover:opacity-90 transition flex items-center justify-center space-x-1 cursor-pointer">
-                    <span>Pilih Layanan Ini (4k)</span>
+                <button type="button" onclick="openOrderModal('4k')" class="mt-6 w-full py-3 rounded-xl bg-cyber-pink text-slate-950 font-extrabold text-xs hover:opacity-90 transition cursor-pointer">
+                    Pilih Layanan Ini (4k)
                 </button>
             </div>
         </div>
     </section>
 
-    <!-- FAQ SECTION -->
-    <section id="faq" class="py-12 md:py-16 px-4 md:px-6 max-w-4xl mx-auto">
-        <h2 class="font-tech text-2xl font-bold text-white text-center mb-8">Pertanyaan Sering Diajukan (FAQ)</h2>
-        <div class="space-y-3">
-            <div class="glass-panel rounded-xl p-4 cursor-pointer" onclick="toggleFaq(this)">
-                <div class="flex items-center justify-between font-semibold text-sm text-slate-200">
-                    <span>Berapa lama estimasi pengantaran pesanan?</span>
-                    <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200 faq-icon"></i>
-                </div>
-                <p class="faq-content hidden text-xs text-slate-400 mt-3 pt-3 border-t border-slate-800 leading-relaxed">Rata-rata 5-10 menit setelah konfirmasi WhatsApp disetujui.</p>
-            </div>
-
-            <div class="glass-panel rounded-xl p-4 cursor-pointer" onclick="toggleFaq(this)">
-                <div class="flex items-center justify-between font-semibold text-sm text-slate-200">
-                    <span>Bagaimana cara pembayaran dengan QRIS?</span>
-                    <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200 faq-icon"></i>
-                </div>
-                <p class="faq-content hidden text-xs text-slate-400 mt-3 pt-3 border-t border-slate-800 leading-relaxed">Pilih opsi QRIS pada form pemesanan, scan QR yang tampil atau minta kode QR lengkap saat pesan di WhatsApp.</p>
-            </div>
-
-            <div class="glass-panel rounded-xl p-4 cursor-pointer" onclick="toggleFaq(this)">
-                <div class="flex items-center justify-between font-semibold text-sm text-slate-200">
-                    <span>Bagaimana jika makanan yang dititip habis?</span>
-                    <i data-lucide="chevron-down" class="w-4 h-4 transition-transform duration-200 faq-icon"></i>
-                </div>
-                <p class="faq-content hidden text-xs text-slate-400 mt-3 pt-3 border-t border-slate-800 leading-relaxed">Kurir kami akan langsung mengontakmu via WhatsApp untuk konfirmasi opsi pengganti.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- MODAL FORM PEMESANAN (EXPLICIT INLINE DISPLAY NONE) -->
+    <!-- MODAL FORM PEMESANAN -->
     <div id="order-modal" style="display: none;" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md">
         <div class="glass-panel border border-slate-700 bg-slate-900 max-w-md w-full rounded-2xl p-5 md:p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
             
-            <button type="button" onclick="closeOrderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2">
-                <i data-lucide="x" class="w-5 h-5"></i>
-            </button>
+            <button type="button" onclick="closeOrderModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-2 text-lg font-bold cursor-pointer">✕</button>
 
-            <h3 class="font-tech text-xl font-bold text-white flex items-center space-x-2">
-                <i data-lucide="shopping-cart" class="text-cyber-cyan w-5 h-5"></i>
-                <span>Formulir Pemesanan</span>
-            </h3>
+            <h3 class="font-tech text-xl font-bold text-white">Formulir Pemesanan</h3>
 
             <!-- Form Content -->
             <div class="space-y-4 mt-5">
@@ -275,11 +216,9 @@
                     <label class="text-xs font-semibold text-slate-300 block mb-1">Metode Pembayaran</label>
                     <div class="grid grid-cols-2 gap-2">
                         <button type="button" id="btn-qris" onclick="selectPayment('qris')" class="p-2.5 rounded-xl border text-xs font-semibold flex items-center justify-center space-x-1 bg-cyber-cyan/20 border-cyber-cyan text-cyber-cyan cursor-pointer">
-                            <i data-lucide="qr-code" class="w-4 h-4"></i>
                             <span>QRIS / E-Wallet</span>
                         </button>
                         <button type="button" id="btn-tunai" onclick="selectPayment('tunai')" class="p-2.5 rounded-xl border text-xs font-semibold flex items-center justify-center space-x-1 bg-slate-950 border-slate-800 text-slate-400 cursor-pointer">
-                            <i data-lucide="banknote" class="w-4 h-4"></i>
                             <span>Tunai Saat COD</span>
                         </button>
                     </div>
@@ -291,12 +230,11 @@
                     <div class="w-36 h-36 mx-auto bg-white p-2 rounded-lg flex items-center justify-center">
                         <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=NYURUHLIMA-PAYMENT" alt="QRIS Code" class="w-full h-full">
                     </div>
-                    <p class="text-[11px] text-slate-400">Scan via GoPay, OVO, Dana, ShopeePay, atau Mobile Banking.</p>
+                    <p class="text-[11px] text-slate-400">Scan via GoPay, OVO, Dana, ShopeePay, dll.</p>
                 </div>
 
                 <!-- Submit Button -->
                 <button type="button" onclick="submitWhatsAppOrder()" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyber-cyan via-cyber-purple to-cyber-pink text-slate-950 font-extrabold text-xs shadow-neon-cyan hover:opacity-95 transition flex items-center justify-center space-x-2 cursor-pointer">
-                    <i data-lucide="message-square" class="w-4 h-4"></i>
                     <span>Kirim Langsung Ke WhatsApp</span>
                 </button>
             </div>
@@ -304,4 +242,100 @@
     </div>
 
     <!-- FOOTER -->
-    <fo
+    <footer class="border-t border-slate-800/80 glass-panel py-8 px-6 mt-16 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <span class="font-tech font-bold text-slate-300">NYURUH LIMA</span>
+                <span>© 2026. Hak Cipta Dilindungi.</span>
+            </div>
+            <div>
+                <a href="https://wa.me/6289504032103" target="_blank" class="hover:text-cyber-cyan">
+                    WhatsApp Service (089504032103)
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT HANDLER -->
+    <script>
+        var currentPaymentMethod = 'qris';
+
+        function openOrderModal(serviceTier) {
+            var modal = document.getElementById('order-modal');
+            var serviceSelect = document.getElementById('form-service');
+            if (serviceSelect && serviceTier) {
+                serviceSelect.value = serviceTier;
+            }
+            if (modal) {
+                modal.style.display = 'flex';
+            }
+        }
+
+        function closeOrderModal() {
+            var modal = document.getElementById('order-modal');
+            if (modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        function selectPayment(method) {
+            currentPaymentMethod = method;
+            var btnQris = document.getElementById('btn-qris');
+            var btnTunai = document.getElementById('btn-tunai');
+            var qrisContainer = document.getElementById('qris-container');
+
+            if (method === 'qris') {
+                btnQris.className = 'p-2.5 rounded-xl border text-xs font-semibold flex items-center justify-center bg-cyber-cyan/20 border-cyber-cyan text-cyber-cyan cursor-pointer';
+                btnTunai.className = 'p-2.5 rounded-xl border text-xs font-semibold flex items-center justify-center bg-slate-950 border-slate-800 text-slate-400 cursor-pointer';
+                qrisContainer.style.display = 'block';
+            } else {
+                btnTunai.className = 'p-2.5 rounded-xl border text-xs font-semibold flex items-center justify-center bg-cyber-cyan/20 border-cyber-cyan text-cyber-cyan cursor-pointer';
+                btnQris.className = 'p-2.5 rounded-xl border text-xs font-semibold flex items-center justify-center bg-slate-950 border-slate-800 text-slate-400 cursor-pointer';
+                qrisContainer.style.display = 'none';
+            }
+        }
+
+        function submitWhatsAppOrder() {
+            var name = document.getElementById('form-name').value.trim();
+            var location = document.getElementById('form-location').value.trim();
+            var service = document.getElementById('form-service').value;
+            var notes = document.getElementById('form-notes').value.trim();
+
+            if (!name) {
+                alert('Harap isi nama pemesan terlebih dahulu!');
+                return;
+            }
+            if (!location) {
+                alert('Harap isi lokasi / kelas pengantaran!');
+                return;
+            }
+            if (!notes) {
+                alert('Harap isi rincian pesanan!');
+                return;
+            }
+
+            var serviceLabels = {
+                '2k': 'Titip Kantin (Rp 2.000)',
+                '3k': 'Print & Tugas (Rp 3.000)',
+                '4k': 'Kurir Custom (Rp 4.000)'
+            };
+
+            var textMessage = 
+                '*HALO NYURUHLIMA - PESANAN BARU*\n' +
+                '---------------------------------\n' +
+                '👤 *Atas Nama:* ' + name + '\n' +
+                '📍 *Diantar Ke:* ' + location + '\n' +
+                '📦 *Pilihan Layanan:* ' + (serviceLabels[service] || service) + '\n' +
+                '💳 *Pembayaran:* ' + currentPaymentMethod.toUpperCase() + '\n' +
+                '📝 *Rincian Pesanan:* ' + notes + '\n' +
+                '---------------------------------\n' +
+                'Mohon segera diproses ya kak! Terima kasih!';
+
+            var targetWhatsAppNumber = '6289504032103';
+            var waUrl = 'https://wa.me/' + targetWhatsAppNumber + '?text=' + encodeURIComponent(textMessage);
+            
+            window.location.href = waUrl;
+        }
+    </script>
+</body>
+</html>
